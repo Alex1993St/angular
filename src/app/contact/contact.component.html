@@ -1,0 +1,78 @@
+<!-- Home -->
+
+<div class="home">
+  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/assets/images/classes.jpg" data-speed="0.8"></div>
+  <div class="home_overlay"></div>
+  <div class="home_container d-flex flex-column align-items-center justify-content-center">
+    <div class="home_title"><h1>Contact</h1></div>
+  </div>
+</div>
+
+<!-- Contact -->
+
+<div class="contact custom_container_wrap">
+  <div class="container">
+    <div class="row">
+
+      <!-- Contact Content -->
+      <div class="col-xl-6">
+        <div class="contact_content">
+          <div>
+            <div class="contact_logo"><img src="/assets/images/logo_1.png" alt=""></div>
+            <div class="contact_title">Our Contact Info</div>
+            <div class="row contact_row">
+              <div class="col-xl-6">
+                <div class="contact_text">
+                  <p>Auctor nisl vitae auctor faucibus. Pellentesque imperdiet auctor eros, sit amet ornare mauris malesuada in. Duis rutrum nisi tempus finibus luctus. Sed porta vel lacus quis.</p>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="contact_info_list">
+                  <ul>
+                    <li>Main Str, no 23, New York</li>
+                    <li>+546 990221 123</li>
+                    <li>gymsportify@contact.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contact_form_container">
+              <form action="#" class="contact_form" (ngSubmit)="submit()">
+                <div class="row contact_form_row">
+                  <div class="col-md-6">
+                    <input type="text" [(ngModel)]="name" name="name" class="contact_input" placeholder="Your name" required="required">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" [(ngModel)]="email" name="email"  class="contact_input" placeholder="Your email" required="required">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" [(ngModel)]="subject" name="subject"  class="contact_input"   placeholder="Subject">
+                  </div>
+                  <div class="col-12">
+                    <textarea class="contact_input contact_textarea" [(ngModel)]="message" name="message"  placeholder="Message" required="required">
+                    </textarea>
+                  </div>
+                </div>
+                <button class="contact_button" (click)="submit()">send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Map -->
+      <div class="col-xl-6">
+        <div class="contact_map_container">
+          <div class="map">
+            <div id="google_map" class="google_map">
+              <div class="map_container">
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
